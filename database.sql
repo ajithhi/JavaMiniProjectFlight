@@ -54,9 +54,9 @@ create table booking(
 insert into booking
 (id, schedule_date, no_of_passengers, user_id, flight_id)
 values
-(2022001, "4", 1, 101),
-(2022002, "2", 2, 101),
-(2022003, "3", 3, 103);
+(2022001,"2022/07/19", 4, 1, 101),
+(2022002,"2022/07/19", 2, 2, 101),
+(2022003,"2022/07/19", 3, 3, 103);
 
 create table passenger(
 	id integer primary key auto_increment,
@@ -78,6 +78,10 @@ create table feedback(
 );
 
 
+insert into feedback
+(id, user_id, booking_id, rating, description)
+values
+(50, 1, 2022001, 8, "Very good Service");
 
 
 
